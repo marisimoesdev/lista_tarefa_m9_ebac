@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&family=Rethink+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="adicao-nova-tarefa">
+            <form id="formulario">
+                <h2>Adicionar nova tarefa</h2>
+                <input type="text" id="nome-tarefa" maxlength="30" required placeholder="Nome da tarefa"/>
+                <button type="submit" >Adicionar</button>
+                <div class="avisos"> <!--div criada para a etilização do posicionamento dos itens-->
+                    <span>máx 30 caracteres</span> <!--tag usada para estilização de texto-->
+                    <span>1 click: marca em cima da tarefa marca como feita</span> <!--tag usada para estilização de texto-->
+                </div>
+            </form>
+            <div class="lista">
+                <ul>
+                    <!--<div class="itens"> div criada para a estilização do posicionamento dos elementos
+                            <div class="itens-feito"> div criada para a estilização do posicionamento dos elementos
+                                <li>${inputTarefa}</li> 
+                                <img class="primeira-img" src="./imagens_m9_tarefa/check.png" alt="sinal check" />
+                            </div>
+                            <div class="imagens"> div criada para a estilização do posicionamento dos elementos
+                                <img class="segunda-img" src="./imagens_m9_tarefa/lixeira.png" alt="uma lixeira"/>
+                            </div>
+                    </div> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1280px; /*a largura da página*/
+    width: 100%; /*a largura máxima que o conteúdo poderá ocupar*/
+    height: 500px; /*altura*/
+}
+
+.adicao-nova-tarefa{ /*classe que contém as divs do formulário e da lista de tarefas */
+    display: flex; 
+    flex-direction: column; /*colocando o conteúdo em coluna*/
+    flex-wrap: wrap; /*esse propriedade foi conlocada para que a propriedade align-content funcionasse*/
+    align-content: center;/* colocando o conteúdo no centro da div*/
+    margin-left: 430px; /*colocando a div no centro da pág*/
+    margin-right: 430px; /*colocando a div no centro da pág*/
+    border: 2px solid blue;
+    margin-top: 100px;
+    padding-bottom: 40px;
+}
+
+form{
+    max-width: 350px;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /*quando não tiver mais espaço, o elemento que não couber deve ir para a próxima linha*/
+}
+
+input{
+    width: 250px;
+    height: 30px;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+#formulario button{
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h2{
+    text-align: center;
+    padding: 16px 0px 16px 0px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.avisos{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;/*deixando os itens da div um embaixo do outro, lógico que necessário antes colocar o display flex*/
+    padding: 2px;
+}
+
+span{
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: small;
+    text-decoration: underline;
+}
+
+ul li{
+    list-style: none; /*tirando o dots points dos itens da lista*/
+    display: flex; /*colocando os elementos um o lado do outro*/
+    padding: 8px;
+    font-family: 'Rethink Sans', sans-serif;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.imagens{
+    padding: 2px;
+    display: flex;
+}
+
+.imagens img{
+    height: 20px;
+    cursor: pointer; /*colocando o cursor pointer na imgem da lixeira*/
+}
+
+.primeira-img{
+    height: 20px;
+    display: none; /*sumindo com a imagem do check, para que a mesma só apareça quando o usuário clicar em cima da tarefa*/
+}
+.itens{
+    border: 2px solid blue;
+    border-radius: 25px;
+    margin-bottom: 8px;
+    display: flex; /*colocando os elementos um o lado do outro*/
+    align-items: center; /*colcoando os itens da div no mesmo nivelamento*/
+    justify-content: space-between;
+    background-color: rgba(165, 46, 46, 0.514);
+}
+
+.itens-feito{ /*classe criada para arrumar o texto da tarefa com a imagem do check*/
+    display: flex;
+    align-items: center;
+}
+
+.feito{ /*classe criada com o objetivo de ser usada no jquery*/
+    text-decoration: line-through;
+}
+
+.fundo{ /*classe criada com o objetivo de ser usada no jquery*/
+    background-color: rgba(87, 175, 87, 0.418);
+}
+
+.imgFeito{ /*classe criada com o objetivo de ser usada no jquery*/
+    display: flex;
+}
